@@ -1,0 +1,125 @@
+/* Standard: Light mode */
+:root {
+    --body-background: var(--wp--preset--color--kalk-50);
+
+    --link-color: var(--wp--preset--color--skogsgron-100);
+    --link-hover-color: var(--wp--preset--color--offblack);
+
+    --header-content-color: var(--wp--preset--color--offblack);
+    --header-background: var(--wp--preset--color--kalk-75);
+    --background-overlay: rgba(0,0,0,0.05);
+    --background-overlay-x2: rgba(0,0,0,0.25);
+    --header-border-color: rgba(0,0,0,0.1);
+    
+    --header-logo-hover-color: var(--wp--preset--color--skogsgron-75);
+    
+    --footer-background: var(--wp--preset--color--kalk-75);
+    --footer-content-color: var(--wp--preset--color--offblack);
+
+    --table-background: var(--wp--preset--color--kalk-100);
+
+    --logo-fill: #002824;
+    --color-header-not-scrolled: #f5f5f5;
+    --box-background: rgba(0,0,0,0.05);
+    --box-border: rgba(0,0,0,0.1);
+    --box-border-not-scrolled: rgba(255, 255, 255, 0.15);
+    --box-border-scrolled: rgba(0, 0, 0, 0.1);
+    --box-border-hover: var(--wp--preset--color--skogsgron-100);
+    --box-shadow: none;
+    --color-text: var(--wp--preset--color--skogsgron-100);
+    --color-text-black: #171717;
+    --color-text-not-scrolled: #f5f5f5;
+    --color-text-scrolled: #002824;
+    --color-background: #fff;
+    --svg-inverted: #171717;
+    --button-background: #002824;
+    --button-color: #f4fffb;
+    --progress-color: var(--wp--preset--color--offblack);
+
+    // Sidebar
+    --sidebar-background: var(--wp--preset--color--smokewhite);
+    --sidebar-header-background: var(--wp--preset--color--guld-25);
+    --sidebar-subpages-background: rgba(0,0,0,0.04);
+    --sidebar-subpages-active-background: rgba(0,0,0,0.05);
+    --sidebar-subpages-color: var(--wp--preset--color--skogsgron-100);
+    --sidebar-subpages-hover-background: rgba(0,0,0,0.05);
+
+    --edit-page-button-background: var(--wp--preset--color--skogsgron-100);
+    --edit-page-button-color: var(--wp--preset--color--smokewhite);
+    --edit-page-button-border: rgba(0,0,0,0.2);
+
+    // Filter
+    --filter-btn-active-bg: #fde7bc;
+    --filter-btn-active-color: var(--wp--preset--color--offblack);
+    --filter-btn-active-border: #ffaa00;
+
+    // Forms
+    --form-submit-button-background: var(--wp--preset--color--skogsgron-100);
+    --submit-color-text: var(--wp--preset--color--offblack);
+    --pill-background: var(--wp--preset--color--guld-25);
+    --pill-color: var(--wp--preset--color--offblack);
+    --pill-border: rgba(0,0,0,0.2);
+}
+
+/* Dark mode via data-theme attribut */
+:root[data-theme="dark"] {
+    --body-background: #073a34;
+
+    --link-color: var(--wp--preset--color--smokewhite);
+    --link-hover-color: var(--wp--preset--color--guld-100);
+    
+    --header-background: var(--wp--preset--color--skogsgron-100);
+    --header-content-color: var(--wp--preset--color--smokewhite);
+    --background-overlay: rgba(0,0,0,0.2);
+    --background-overlay-x2: rgba(0,0,0,0.4);
+    --header-border-color: rgba(255,255,255,0.1);
+    --header-logo-hover-color: var(--wp--preset--color--guld-100);
+
+    --footer-background: var(--wp--preset--color--skogsgron-100);
+    --footer-content-color: var(--wp--preset--color--smokewhite);
+
+    --table-background: #003F39;
+
+    --logo-fill: #f4fffb;
+    --color-header-not-scrolled: #f4fffb;
+    --box-background: rgba(255,255,255,0.05);
+    --box-border: rgba(255,255,255,0.25);
+    --box-border-hover: var(--wp--preset--color--guld-100);
+    --box-border-not-scrolled: rgba(255,255,255,0.25);
+    --box-border-scrolled: rgba(255, 255, 255, 0.25);
+    --box-shadow: 4px 4px 20px rgba(0,0,0,0.1);
+    --color-text: #f4fffb;
+    --color-text-black: #171717;
+    --color-background: rgba(0,0,0,0.4);
+    --svg-inverted: #f5f5f5;
+    --color-text-scrolled: #f4fffb;
+    --button-background: #f4fffb;
+    --button-color: #002824;
+
+    // Sidebar
+    --sidebar-background: rgba(0,0,0,0.1);
+    --sidebar-header-background: rgba(0,0,0,0.2);
+    --sidebar-subpages-background: rgba(0,0,0,0.04);
+    --sidebar-subpages-active-background: rgba(0,0,0,0.4);
+    --sidebar-subpages-color: var(--wp--preset--color--smokewhite);
+    --sidebar-subpages-hover-background: rgba(0,0,0,0.2);
+
+    --progress-color: var(--wp--preset--color--smokewhite);
+
+    --edit-page-button-background: var(--wp--preset--color--skogsgron-100);
+    --edit-page-button-color: var(--wp--preset--color--smokewhite);
+    --edit-page-button-border: rgba(255,255,255,0.2);
+
+    // Filter
+    --filter-btn-active-bg: rgba(255, 255, 255, 0.25);
+    --filter-btn-active-color: var(--wp--preset--color--smokewhite);
+    --filter-btn-active-border: rgba(255, 255, 255, 0.2);
+
+    // Forms
+    --form-submit-button-background: var(--box-background);
+    --submit-color-text: #FFF;
+    --pill-background: var(--wp--preset--color--skogsgron-100);
+    --pill-color: var(--wp--preset--color--smokewhite);
+    --pill-border: rgba(255, 255, 255, 0.2);
+}
+
