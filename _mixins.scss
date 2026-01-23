@@ -19,7 +19,6 @@
 }
 
 // Typography
-
 // Typografisk spacing-skala
 // Större rubriker får mer utrymme efter sig för bättre läsbarhet
 @mixin h1 {
@@ -29,6 +28,15 @@
     margin-block-end: 0.75rem; // Störst utrymme efter h1
     margin-inline: 0;
     font-weight: 700;
+
+    &.wp-block-heading {
+        &.has-x-large-font-size {
+            font-size: 4.0556rem; // 73px / 18px base = 4.0556rem
+        }
+        &.has-large-font-size {}
+        &.has-medium-font-size {}
+        &.has-small-font-size {}
+    }
 }
 @mixin h2 {
     font-size: 2rem; // 36px (2 × 18px)
@@ -104,4 +112,27 @@ h6 {
 
 p {
     @include body;
+}
+
+@mixin wp-block-buttons {
+    gap: calc($gutter / 2);
+
+    .wp-block-button {
+        .wp-block-button__link {
+            @include body;
+            background-color: $skogsgron-100;
+            border-width: 0;
+            color: $white;
+            min-height: 44px; // Minimum touch target size (WCAG)
+            padding-top: calc(0.75em + 4px); // Justerad för minimum 44px höjd
+            padding-right: calc(1.333em + 2px);
+            padding-bottom: calc(0.75em + 4px); // Justerad för minimum 44px höjd
+            padding-left: calc(1.333em + 2px);
+            text-decoration: none;
+            border-radius: $border-radius;
+        }
+    }
+}
+.wp-block-buttons {
+    @include wp-block-buttons;
 }
