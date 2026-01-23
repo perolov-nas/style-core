@@ -3,8 +3,8 @@
 /* Light/Dark mode - color-scheme styr light-dark() funktionen */
 :root {
     color-scheme: light;
-    --body-bg: #{light-dark($kalk-25, $skogsgron-100)};
-    --text-color: #{light-dark($skogsgron-100, $kalk-25)};
+    --body-bg: #{light-dark($kalk-100, $skogsgron-dark)};
+    --text-color: #{light-dark($skogsgron-100, $kalk-50)};
 }
 
 /* När data-theme="dark" är satt på html-elementet */
