@@ -2,8 +2,9 @@
 
 /* Light/Dark mode - color-scheme styr light-dark() funktionen */
 :root {
+    font-size: 16px; // Nu är 1rem = 18px
     color-scheme: light;
-    --body-bg: #{light-dark($kalk-100, $skogsgron-dark)};
+    --body-bg: #{light-dark($offwhite, $skogsgron-dark)};
     --text-color: #{light-dark($skogsgron-100, $kalk-50)};
 }
 

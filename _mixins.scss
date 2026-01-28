@@ -69,6 +69,13 @@
     margin-block-end: 0.5rem;
     margin-inline: 0;
     font-weight: 700;
+
+    &.has-x-large-font-size {}
+    &.has-large-font-size {}
+    &.has-medium-font-size {
+        font-size: 0.8889rem; // 16px (16px ÷ 18px = 0.8889rem)
+    }
+    &.has-small-font-size {}
 }
 @mixin h6 {
     font-size: 1rem; // 18px (samma som body)
